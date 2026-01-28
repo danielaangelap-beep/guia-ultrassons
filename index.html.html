@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo de Ultrassons na Gestação | Entenda cada exame</title>
+    <meta name="description" content="Guia completo para você entender todos os ultrassons da gestação. Tabelas de medidas, interpretação de laudos e muito mais. Acabe com a ansiedade!">
+    
+    <!-- Meta Pixel Code - SUBSTITUA SEU_PIXEL_ID pelo ID do seu pixel -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1959249538363174');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1959249538363174&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-pink: #FFB6C1;
+            --soft-pink: #FFC9D6;
+            --light-pink: #FFE5EC;
+            --peach: #FFD5C2;
+            --cream: #FFF8F0;
+            --text-dark: #5A4A4A;
+            --text-light: #8B7B7B;
+            --accent-teal: #7ECECA;
+        }
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            color: var(--text-dark);
+            background: var(--cream);
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect fill="%23FFF8F0" width="400" height="400"/><circle cx="80" cy="80" r="30" fill="%23FFE5EC" opacity="0.6"/><circle cx="320" cy="320" r="40" fill="%23FFD5C2" opacity="0.5"/><path d="M 60 350 Q 80 340 100 350" stroke="%23FFB6C1" fill="none" stroke-width="2" opacity="0.4"/><circle cx="350" cy="100" r="25" fill="%23FFC9D6" opacity="0.5"/><ellipse cx="150" cy="200" rx="15" ry="20" fill="%23FFE5EC" opacity="0.4"/><rect x="280" y="180" width="40" height="30" rx="15" fill="%23FFD5C2" opacity="0.3"/></svg>') repeat;
+            background-size: 400px 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(255,248,240,0.8) 0%, rgba(255,248,240,0.95) 100%);
+            pointer-events: none;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-pink), var(--soft-pink));
+            color: white;
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 24px;
+            line-height: 1.2;
+            animation: fadeInUp 1s ease-out 0.3s backwards;
+        }
+        
+        h1 .highlight {
+            color: var(--primary-pink);
+            position: relative;
+        }
+        
+        .subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            color: var(--text-light);
+            margin-bottom: 40px;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out 0.4s backwards;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF8FA3, var(--primary-pink));
+            color: white;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(255, 143, 163, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            animation: fadeInUp 1s ease-out 0.5s backwards, pulse 2s ease-in-out infinite;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 143, 163, 0.5);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .price {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: var(--text-light);
+            animation: fadeInUp 1s ease-out 0.6s backwards;
+        }
+        
+        .price-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-pink);
+            display: block;
+            margin-top: 8px;
+        }
+        
+        .section {
+            padding: 80px 20px;
+            position: relative;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--text-dark);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(255, 182, 193, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid var(--light-pink);
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(255, 182, 193, 0.25);
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .benefit-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+        
+        .benefit-text {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .content-section {
+            background: white;
+            padding: 80px 20px;
+            border-radius: 30px;
+            margin: 0 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+        
+        .content-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .content-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            margin-bottom: 15px;
+            background: var(--light-pink);
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        .content-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .check-icon {
+            font-size: 1.5rem;
+            color: var(--accent-teal);
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .content-text {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        .guarantee-section {
+            background: linear-gradient(135deg, var(--light-pink), var(--peach));
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 30px;
+            margin: 80px 20px;
+        }
+        
+        .guarantee-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        .guarantee-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+        
+        .guarantee-text {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 2px solid var(--light-pink);
+        }
+        
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+        
+        .faq-answer {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, var(--primary-pink), var(--accent-teal));
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .final-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 30px;
+        }
+        
+        .final-cta-button {
+            background: white;
+            color: var(--primary-pink);
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .final-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+        }
+        
+        footer {
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .testimonials {
+            margin: 60px 0;
+            text-align: center;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            max-width: 600px;
+            margin: 0 auto 30px;
+            border-left: 5px solid var(--primary-pink);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .cta-button {
+                padding: 18px 40px;
+                font-size: 1.1rem;
+            }
+            
+            .section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">✨ Ebook Digital - Acesso Imediato</span>
+            <h1>Entenda cada <span class="highlight">ultrassom</span> da sua gestação</h1>
+            <p class="subtitle">Pare de sair dos exames com dúvidas e ansiedade. Tenha na palma da sua mão tudo o que você precisa saber sobre cada ultrassom, do primeiro até o último.</p>
+            
+            <a href="https://go.hotmart.com/Y103962339J" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">
+                Quero meu guia agora! 💗
+            </a>
+            
+            <div class="price">
+                <span>Investimento único de</span>
+                <span class="price-value">R$ 29,90</span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Por que você precisa deste guia?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">😰</div>
+                    <h3 class="benefit-title">Acabar com a ansiedade</h3>
+                    <p class="benefit-text">Entenda o que cada número, sigla e medida significa. Nunca mais saia de um exame com mais dúvidas do que respostas.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3 class="benefit-title">Tabelas completas</h3>
+                    <p class="benefit-text">Tenha acesso às medidas do bebê por semana gestacional. Compare e entenda se está tudo dentro do esperado.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📖</div>
+                    <h3 class="benefit-title">Ler seu próprio laudo</h3>
+                    <p class="benefit-text">Aprenda a interpretar cada parte do laudo sem depender 100% de explicações rápidas do médico.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤰</div>
+                    <h3 class="benefit-title">De mãe para mãe</h3>
+                    <p class="benefit-text">Escrito por uma mãe que passou pela mesma ansiedade e estudou tudo para ter uma gestação mais tranquila.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💝</div>
+                    <h3 class="benefit-title">Linguagem simples</h3>
+                    <p class="benefit-text">Sem termos complicados ou linguagem médica difícil. Tudo explicado de forma clara e objetiva.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3 class="benefit-title">Sempre com você</h3>
+                    <p class="benefit-text">Acesso pelo celular, tablet ou computador. Consulte quando e onde quiser, quantas vezes precisar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">O que você vai encontrar no guia?</h2>
+            <div class="content-list">
+                <div class="content-item">
+                    <span class="check-icon">✓</span>
+                    <p class="content-text"><strong>Todos os tipos de ultrassom:</strong> transvaginal, obstétrico, morfológico, translucência nucal, doppler e muito mais</p>
+                </div>
+                
+                <div class="content-item">
+                    <span class="check-icon">✓</span>
+                    <p class="content-text"><strong>Quando fazer cada exame:</strong> saiba o momento certo de cada ultrassom durante a gestação</p>
+                </div>
+                
+                <div class="content-item">
+                    <span class="check-icon">✓</span>
+                    <p class="content-text"><strong>Tabela completa de medidas fetais:</strong> compare as medidas do seu bebê semana a semana</p>
+                </div>
+                
+                <div class="content-item">
+                    <span class="check-icon">✓</span>
+                    <p class="content-text"><strong>Como interpretar o laudo:</strong> entenda cada sigla, termo e medida que aparece no relatório</p>
+                </div>
+                
+                <div class="content-item">
+                    <span class="check-icon">✓</span>
+                    <p class="content-text"><strong>Placenta prévia e grau de maturação:</strong> compreenda o que isso significa e quando se preocupar</p>
+                </div>
+                
+                <div class="content-item">
+                    <span class="check-icon">✓</span>
+                    <p class="content-text"><strong>Líquido amniótico:</strong> aprenda sobre volume, índice e o que é considerado normal</p>
+                </div>
+                
+                <div class="content-item">
+                    <span class="check-icon">✓</span>
+                    <p class="content-text"><strong>Desenvolvimento do bebê:</strong> o que é avaliado em cada fase da gestação</p>
+                </div>
+                
+                <div class="content-item">
+                    <span class="check-icon">✓</span>
+                    <p class="content-text"><strong>Glossário completo:</strong> todos os termos médicos explicados de forma simples</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="guarantee-section">
+        <div class="container">
+            <div class="guarantee-icon">🛡️</div>
+            <h3 class="guarantee-title">Garantia de 7 dias</h3>
+            <p class="guarantee-text">Se por qualquer motivo você não gostar do guia, devolvemos 100% do seu dinheiro. Sem perguntas, sem complicação. Você não tem nada a perder!</p>
+        </div>
+    </div>
+    
+    <!-- Seção de depoimentos - descomente quando tiver depoimentos reais -->
+    <!--
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">O que outras mães estão dizendo</h2>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Esse guia mudou completamente minha experiência nos ultrassons! Agora eu entendo tudo e fico muito mais tranquila. Vale cada centavo!"</p>
+                    <p class="testimonial-author">- Maria Silva, 28 semanas</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Como primeira gestação, eu estava completamente perdida. O guia me ajudou a entender cada detalhe e diminuiu muito minha ansiedade."</p>
+                    <p class="testimonial-author">- Ana Paula, 32 semanas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h4 class="faq-question">Como recebo o guia após a compra?</h4>
+                    <p class="faq-answer">Assim que seu pagamento for confirmado, você recebe o acesso imediato por email. É um ebook digital em PDF que você pode ler no celular, tablet ou computador.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">O guia substitui a consulta médica?</h4>
+                    <p class="faq-answer">Não! O guia é um material educativo para você entender melhor os exames, mas NUNCA substitui a avaliação e orientação do seu médico obstetra.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">Posso usar o guia durante toda a gestação?</h4>
+                    <p class="faq-answer">Sim! O guia cobre todos os ultrassons desde o início até o final da gestação. Você pode consultar sempre que precisar.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">E se eu não gostar do conteúdo?</h4>
+                    <p class="faq-answer">Oferecemos garantia de 7 dias. Se você não ficar satisfeita, devolvemos 100% do valor pago, sem burocracias.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">O guia é atualizado?</h4>
+                    <p class="faq-answer">Sim! O conteúdo é baseado nas práticas e diretrizes atuais. Todo o material foi cuidadosamente estudado e verificado.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">Serve para quem está tentando engravidar?</h4>
+                    <p class="faq-answer">Sim! Se você está tentando engravidar, o guia vai te preparar para entender todos os exames que virão durante sua futura gestação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="final-cta">
+        <div class="container">
+            <h2>Viva cada ultrassom com tranquilidade e conhecimento 💗</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.95;">Seu próximo exame pode ser diferente. Comece agora!</p>
+            <a href="https://go.hotmart.com/Y103962339J" class="final-cta-button" onclick="fbq('track', 'InitiateCheckout');">
+                Garantir meu guia agora - R$ 29,90
+            </a>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.85;">✓ Acesso imediato ✓ Garantia de 7 dias ✓ Pagamento 100% seguro</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Guia Completo de Ultrassons na Gestação - Daniela Paula</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">Este produto não substitui orientação médica profissional.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Tracking de cliques nos botões CTA
+        document.querySelectorAll('.cta-button, .final-cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // O fbq já está sendo chamado no onclick do HTML
+                console.log('Botão CTA clicado');
+            });
+        });
+    </script>
+</body>
+</html>
