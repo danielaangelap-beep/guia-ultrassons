@@ -85,9 +85,57 @@
         
         .hero-content {
             text-align: center;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             animation: fadeInUp 1s ease-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .hero-text {
+            max-width: 800px;
+        }
+        
+        .ebook-cover-container {
+            max-width: 400px;
+            width: 100%;
+            animation: fadeInUp 1s ease-out 0.7s backwards, float 3s ease-in-out infinite;
+        }
+        
+        .ebook-cover {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(255, 143, 163, 0.4);
+            transition: transform 0.3s ease;
+        }
+        
+        .ebook-cover:hover {
+            transform: scale(1.05);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @media (min-width: 768px) {
+            .hero-content {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .hero-text {
+                text-align: left;
+                flex: 1;
+            }
+            
+            .ebook-cover-container {
+                flex: 0 0 350px;
+            }
         }
         
         @keyframes fadeInUp {
@@ -408,17 +456,23 @@
 <body>
     <section class="hero">
         <div class="hero-content">
-            <span class="badge">✨ Ebook Digital - Acesso Imediato</span>
-            <h1>Entenda cada <span class="highlight">ultrassom</span> da sua gestação</h1>
-            <p class="subtitle">Pare de sair dos exames com dúvidas e ansiedade. Tenha na palma da sua mão tudo o que você precisa saber sobre cada ultrassom, do primeiro até o último.</p>
+            <div class="hero-text">
+                <span class="badge">✨ Ebook Digital - Acesso Imediato</span>
+                <h1>Entenda cada <span class="highlight">ultrassom</span> da sua gestação</h1>
+                <p class="subtitle">Pare de sair dos exames com dúvidas e ansiedade. Tenha na palma da sua mão tudo o que você precisa saber sobre cada ultrassom, do primeiro até o último.</p>
+                
+                <a href="https://go.hotmart.com/Y103962339J" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">
+                    Quero meu guia agora! 💗
+                </a>
+                
+                <div class="price">
+                    <span>Investimento único de</span>
+                    <span class="price-value">R$ 29,90</span>
+                </div>
+            </div>
             
-            <a href="https://go.hotmart.com/Y103962339J" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">
-                Quero meu guia agora! 💗
-            </a>
-            
-            <div class="price">
-                <span>Investimento único de</span>
-                <span class="price-value">R$ 29,90</span>
+            <div class="ebook-cover-container">
+                <img src="capa-ebook.jpg" alt="Capa do Guia Completo de Ultrassons na Gestação" class="ebook-cover">
             </div>
         </div>
     </section>
